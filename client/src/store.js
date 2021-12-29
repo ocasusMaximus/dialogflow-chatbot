@@ -20,9 +20,11 @@ class ApplicationStore {
 
   handleConversation = (message) => {
     this.isLoadingChatMessages = true;
-    this.agentMessages.push({ userMessage: message });
+    if (message) {
+      this.agentMessages.push({ userMessage: message });
+    }
 
-    Axios.post(`${ENDPOINT}/dialogflow-response`, {
+    Axios.post(`${ENDPOINT}/api/agent/text-input`, {
       message: message || "Hi",
     })
       .then((res) => {

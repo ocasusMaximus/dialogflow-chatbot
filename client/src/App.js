@@ -1,7 +1,7 @@
 import "./App.css";
-import { Chat } from "./components/ChatFromMui.jsx";
 import { Provider } from "mobx-react";
 import { store } from "./store.js";
+import Chat from "./components/Chat.jsx";
 function App() {
   return (
     <Provider ApplicationStore={store}>
