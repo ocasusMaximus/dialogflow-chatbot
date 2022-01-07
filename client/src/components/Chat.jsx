@@ -1,25 +1,31 @@
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Avatar } from "@chatscope/chat-ui-kit-react";
 import TypingIndicator from "@chatscope/chat-ui-kit-react/dist/cjs/TypingIndicator";
-import avatarBot from "../img/chatbotAvatar.jpg";
+import madmonqAvatarBot from "../img/madmonqBotAvatar.png";
+import pepega from "../img/pepega.png";
 import { useEffect } from "react";
 import { toJS } from "mobx";
 import { inject, observer } from "mobx-react";
 
 export function Chat(props) {
   const { handleConversation, agentMessages, isLoadingChatMessages } = props.ApplicationStore;
-  useEffect(() => {
-    handleConversation();
-  }, []);
+  // useEffect(() => {
+  //   handleConversation();
+  // }, []);
 
   const data = toJS(agentMessages);
   console.log(data.length);
   // console.log(msg);
   return (
-    <div style={{ position: "relative", height: "500px" }}>
-      <MainContainer>
+    <div style={{ position: "relative", height: "70vh", backgroundColor: "#10141a" }}>
+      <MainContainer style={{ border: "none" }}>
         <ChatContainer>
-          <MessageList typingIndicator={isLoadingChatMessages && <TypingIndicator content="Chatbot is typing" />}>
+          <MessageList
+            style={{ backgroundColor: "#10141a", border: "none" }}
+            typingIndicator={
+              isLoadingChatMessages && <TypingIndicator style={{ backgroundColor: "#10141a", border: "none" }} content="Chatbot is typing" />
+            }
+          >
             {data.map(({ fulfillmentText, userMessage }, i) => (
               <div key={i}>
                 {fulfillmentText && (
@@ -32,7 +38,9 @@ export function Chat(props) {
                       sender: "Chatbot",
                     }}
                   >
-                    <Avatar src={avatarBot}></Avatar>
+                    <Message.CustomContent style={{ backgroundColor: "#f01957" }}>{fulfillmentText}</Message.CustomContent>
+
+                    <Avatar src={madmonqAvatarBot} status="available"></Avatar>
                   </Message>
                 )}
                 {userMessage && (
@@ -44,7 +52,9 @@ export function Chat(props) {
                       direction: "outgoing",
                       sender: "Sender",
                     }}
-                  ></Message>
+                  >
+                    <Avatar src={pepega} status="available"></Avatar>
+                  </Message>
                 )}
               </div>
             ))}
@@ -56,6 +66,7 @@ export function Chat(props) {
             onSend={(msg) => {
               handleConversation(msg);
             }}
+            style={{ backgroundColor: "#1d232e", border: "none" }}
           />
         </ChatContainer>
       </MainContainer>
