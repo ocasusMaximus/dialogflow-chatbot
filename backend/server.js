@@ -1,6 +1,5 @@
 import express from "express";
 import dotenv from "dotenv";
-import mongoose from "mongoose";
 import cors from "cors";
 import bodyParser from "body-parser";
 import Agent from "./agent";
@@ -8,17 +7,6 @@ import Agent from "./agent";
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
-
-const MONGO_URI = process.env.MONGO_URI;
-
-mongoose
-  .connect(`${MONGO_URI}`, {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("🥰 mongodb connected 🥰"))
-  .catch(() => console.log("========== 😢 We are unable to connect to the mongo db 😢 =========="));
 
 app.use(cors());
 

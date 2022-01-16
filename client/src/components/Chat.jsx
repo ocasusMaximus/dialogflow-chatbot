@@ -9,13 +9,12 @@ import { inject, observer } from "mobx-react";
 
 export function Chat(props) {
   const { handleConversation, agentMessages, isLoadingChatMessages } = props.ApplicationStore;
-  // useEffect(() => {
-  //   handleConversation();
-  // }, []);
+  useEffect(() => {
+    handleConversation();
+  }, []);
 
   const data = toJS(agentMessages);
   console.log(data.length);
-  // console.log(msg);
   return (
     <div style={{ position: "relative", height: "70vh", backgroundColor: "#10141a" }}>
       <MainContainer style={{ border: "none" }}>
@@ -23,7 +22,7 @@ export function Chat(props) {
           <MessageList
             style={{ backgroundColor: "#10141a", border: "none" }}
             typingIndicator={
-              isLoadingChatMessages && <TypingIndicator style={{ backgroundColor: "#10141a", border: "none" }} content="Chatbot is typing" />
+              isLoadingChatMessages && <TypingIndicator style={{ backgroundColor: "#10141a", border: "none" }} content="MadmonqBot is typing" />
             }
           >
             {data.map(({ fulfillmentText, userMessage }, i) => (
@@ -35,7 +34,7 @@ export function Chat(props) {
                       message: fulfillmentText,
                       sentTime: "just now",
                       direction: "incoming",
-                      sender: "Chatbot",
+                      sender: "MadmonqBot",
                     }}
                   >
                     <Message.CustomContent style={{ backgroundColor: "#f01957" }}>{fulfillmentText}</Message.CustomContent>

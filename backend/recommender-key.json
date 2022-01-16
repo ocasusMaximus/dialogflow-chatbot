@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dulcet-yew-304523",
+  "private_key_id": "7c5010d0f4bca5a0d00f255d002f2d5f44ac362f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDJq15vM550LtkF\n36zgO8ri6ACQs1gyTgDqciA09wMtTP9Ami9kwccP9s7DyAA1RDYuaQfrUK1IUhaM\nzyAf+LqEa+pA2ce6yLqNgX+y655HMyLccHmI3T4O0PSPMFeG+0TkGKget0C5BdbJ\n91lnpG6yVCjUHLiZsKdA+ZGGcbejZV+AHxlmB0wvg0Ny9CnYSP3nCvpHkP+QDnyJ\nPc4lOlLlzmrmQAZe1p8n8zlvEf3xrpydJaXNmeJc9NYPwlgfRN49QCFdb9f6PrDa\n+USIpIF90vF4D7ZqctbVc5CreSJGF2O6rFv9XqF7LtxCDC0bSogUsAfGd3rE8Jl/\nnlFQc53dAgMBAAECggEADah4BFL8I8U6eH3eEO+rvXNV+nbS/dEvmbEyAjRKeEpz\nLRZkKFBBYZDnDvZgITtl6f2+Bg9YNQIuOcobVF79jtNaMZsuPjWzALtpAR6ZARxy\n+3f4my7UsZ8wOPResSsaTtJmrHHfxcgh9Fq2qODHiHdPrpHlZK9EnI9qbi8Mb1ni\n6vWnwvCapjhilVDkABKadOcBhbDQJtyPo0Tau06wO2VucTmbuTk9TT2MEBcQ5adR\nwWWRg0S8i5jsZf6sFzzK8N29E5h/1TU8X0LMDS/x5vX/7/U3dJhCBJY6UReI8Gke\nLMMXtbRJoLNKfP1KZAlddOcv9c1PtCGS8vRWTiYC1wKBgQDwZC0RQ1IROwEN7uxa\nQVZrjFAfI/ejQHVGYknOeWE719SKThmPCbfWEWf+KzHRqja3cX0/8X5FJavOkccY\n0AWKI5KcYovQ2YuZcWZR1kW6+nA4ZiT/pRTbFZRMJTldT2fatvNVK/mfbqD84a4m\nOdfYJGkZHTlW2tSVrn7ErETlhwKBgQDWw40OIOYbRYsEIexWnSuy/9U4BEo1Mhz5\nmdiwRPTjXvlleTQcGNIo8tm2bUBoc94EkDMAVB6fw2nnzaEmkj8AQeWzRoepehhe\nLrRpXk5VEVWxmm4FXfCQOCwoKFv4wsXhUz5+QAxeMGBau07dXPLnaJVSygudYsho\nQo7DyBF6ewKBgQCkVqekrJQ3KVJANz0nOpGc9pBzqYAK/+7sjhcM61f4tEUdw+Sf\nL7KYys+AKAFn52h+ojxQ8YQ0O1un3Wrx4IxY8paxCIGy5nYUET005zpGaB09wT67\n8hw+5hK6t5vu2XETSY0yhdyiDNxL5PDMOzD/F20t+ReQ9AruxRru0yJKkwKBgQC+\nYGS2xIUWYcREqomlkfe92jk5Sdw6Yaz7udwzDT2EHJm50QJXcc1CjVxe8WPp8+Q4\naVc8kFUBTKmh2U9kMLn2UXP8QqZZnqjhPEejK/0GPbKYGIw057wrLBBAnN5Cmu3s\nuu0n30DXcczIQUg8xHtylOvhksdPAdUjTvTdKooL5wKBgGEt6jYYseWP7oJ0W1xc\nap0TPAMGK349gKF8peBVL2QTS/yaj354yZutytrsNIozqlQQJnHrdaW8m/Wfut2C\nBgfau7uxb0NLyQ+zobbsRHMF+jai6Fqu7X1jydpEs2PHpQj2qiDSmdU4/6QHX5bl\nQV7s3HgLuzRjQlWnWhD5XbI9\n-----END PRIVATE KEY-----\n",
+  "client_email": "chatbotaccount@dulcet-yew-304523.iam.gserviceaccount.com",
+  "client_id": "110966872210827193630",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/chatbotaccount%40dulcet-yew-304523.iam.gserviceaccount.com"
+}
